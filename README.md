@@ -3,7 +3,7 @@ This project validates opening and closing brackets of LISP code. Supply the cod
 
 To run this project pull code. Navigate to src directory. run the following commands:
 
-javac main/Main.java
-java main.Main 'Code to validate' - ex. '(abc(defg)(hijk(lmno(p))))'
+javac main/Main.java  
+java main.Main 'Code to validate' - ex. '(abc(defg)(hijk(lmno(p))))'  
 
 The program will print out true or false.
