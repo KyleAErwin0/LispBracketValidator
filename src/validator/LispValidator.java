@@ -40,15 +40,15 @@ public class LispValidator {
 							try
 							{
 								bracketStack.pop();
+								
+								if(i == codeLength - 1 && bracketStack.empty())
+								{
+									isValid = true;
+								}
 							}
 							catch(EmptyStackException ese)
 							{
 								failed = true;
-							}
-							
-							if(i == codeLength - 1 && bracketStack.empty())
-							{
-								isValid = true;
 							}
 							break;
 						default:
